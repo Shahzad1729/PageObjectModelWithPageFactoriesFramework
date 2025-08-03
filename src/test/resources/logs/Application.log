@@ -1,0 +1,69 @@
+03/08/2025 18:32:46 devpinoyLogger Before Method completed ----------------------------------------------------
+03/08/2025 18:32:55 devpinoyLogger Chrome driver is created
+03/08/2025 18:32:57 devpinoyLogger Clicking on element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #navbarSupportedContent > ul > li:nth-child(4) > a]
+03/08/2025 18:32:58 devpinoyLogger Typing in element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #email], value: testauto123@gmail.com
+03/08/2025 18:32:58 devpinoyLogger Typing in element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #password], value: Test@123
+03/08/2025 18:32:59 devpinoyLogger Clicking on element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: body > app-root > div > app-login > div > div > div > form > div.input-group.mb-3 > input]
+03/08/2025 18:33:02 devpinoyLogger DataProvider Value:[{password=Test@123, email=testauto123@gmail.com}]
+03/08/2025 18:33:02 devpinoyLogger Report flushed..
+03/08/2025 18:33:03 devpinoyLogger Before Method completed ----------------------------------------------------
+03/08/2025 18:33:03 devpinoyLogger Clicking on element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #navbarSupportedContent > ul > li:nth-child(4) > a]
+03/08/2025 18:33:24 devpinoyLogger Clicking on element: Proxy element for: AjaxElementLocator 'By.cssSelector: body > app-root > div > app-login > div > div > div > div.input-group.mb-3 > p > a:nth-child(1)'
+03/08/2025 18:33:27 devpinoyLogger Typing in element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #first_name], value: LnAuto101
+03/08/2025 18:33:27 devpinoyLogger Typing in element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #last_name], value: FnAuto410
+03/08/2025 18:33:27 devpinoyLogger Typing in element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #dob], value: 2001-12-12
+03/08/2025 18:33:27 devpinoyLogger Typing in element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #street], value: Supreme Colony
+03/08/2025 18:33:27 devpinoyLogger Typing in element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #postal_code], value: 400701
+03/08/2025 18:33:27 devpinoyLogger Typing in element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #city], value: Thane
+03/08/2025 18:33:32 devpinoyLogger Typing in element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #state], value: Maharashtra
+03/08/2025 18:33:32 devpinoyLogger Typing in element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #phone], value: 1991340770
+03/08/2025 18:33:32 devpinoyLogger Typing in element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #email], value: testauto9494@gmail.com
+03/08/2025 18:33:32 devpinoyLogger Typing in element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #password], value: TestAuto@8857
+03/08/2025 18:33:35 devpinoyLogger Clicking on element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: [data-test='register-submit']]
+03/08/2025 18:33:40 devpinoyLogger Typing in element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #email], value: testauto9494@gmail.com
+03/08/2025 18:33:40 devpinoyLogger Typing in element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: #password], value: TestAuto@8857
+03/08/2025 18:33:40 devpinoyLogger Clicking on element: [[ChromeDriver: chrome on windows (b94b3967aa4d1bd92af71e0789f287d8)] -> css selector: body > app-root > div > app-login > div > div > div > form > div.input-group.mb-3 > input]
+03/08/2025 18:33:47 devpinoyLogger StackTrace: java.lang.AssertionError: expected [FnAuto410 LnAuto101] but found [LnAuto101 FnAuto410]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at page.factories.pages.actions.HomePage.verifyNextScreenAfterLogin(HomePage.java:23)
+	at page.factories.testcases.RegisterAccountTest.registerAccountTest(RegisterAccountTest.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+03/08/2025 18:33:47 devpinoyLogger StackTrace done 
+03/08/2025 18:33:47 devpinoyLogger DataProvider Value:[{postalCode=400701.0, state=Maharashtra, country=IN, street=Supreme Colony, city=Thane, email=testauto, password=TestAuto@8857, dob=2001-12-12, firstName=FnAuto, lastName=LnAuto}]
+03/08/2025 18:33:47 devpinoyLogger Report flushed..
+03/08/2025 18:33:51 devpinoyLogger Test execution completed..
