@@ -68,8 +68,8 @@ Run tests:
 Via testng.xml OR individual test classes
 
 ### ✅ Option 2: Command Line
-```bash
-   mvn clean test
+
+`mvn clean test`
 
 Reports will be available under /reports/index.html
 Logs saved under /log/execution.log
