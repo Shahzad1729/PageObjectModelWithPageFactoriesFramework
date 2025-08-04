@@ -26,45 +26,6 @@ This repository contains a modular, extensible, and robust **Java-based Test Aut
 
 ---
 
-## 🧾 Project Structure
-
-## 🧾 Project Structure
-
-project-root/
-│
-├── src/
-│ ├── main/
-│ │ └── java/
-│ │ └── pom/example/
-│ │ ├── base/ # Base classes (BaseTest, Page)
-│ │ ├── listeners/ # TestNG listeners (CustomListener)
-│ │ ├── locators/ # Page locators using PageFactory
-│ │ ├── pages/ # Page Actions (LoginPage, RegisterAccountPage, etc.)
-│ │ ├── reports/ # Extent Report setup
-│ │ └── utilities/ # Excel Reader, Screenshot, Dropdown etc.
-│ └── test/
-│ └── java/
-│ └── pom/example/testcases/ # Test classes (LoginTest, RegisterAccountTest)
-│
-├── testdata/
-│ └── TestData.xlsx # Excel sheet with test data (LoginTest, RegisterAccountTest, Test_Suite)
-│
-├── reports/
-│ └── index.html # Extent HTML report (generated after execution)
-│
-├── log/
-│ └── execution.log # Log4j logs
-│
-├── testng.xml # TestNG suite file
-├── log4j.properties # Log4j config
-└── pom.xml # Maven dependencies
-
-yaml
-Copy
-Edit
-
----
-
 ## 📦 Tools & Tech Stack
 
 | Component        | Description |
@@ -106,15 +67,15 @@ Run tests:
 
 Via testng.xml OR individual test classes
 
-✅ Option 2: Command Line
-bash
-Copy
-Edit
-mvn clean test
+### ✅ Option 2: Command Line
+```bash
+   mvn clean test
+
 Reports will be available under /reports/index.html
 Logs saved under /log/execution.log
 
-✅ Option 3: Jenkins
+### ✅ Option 3: Jenkins
+
 Create a Freestyle Job
 
 Git SCM → Add repo URL
@@ -125,14 +86,14 @@ Post-build action:
 
 Publish Extent HTML Report from reports/
 
-📸 Screenshots & Reports
+### 📸 Screenshots & Reports
 Captured for important checkpoints (e.g. error messages, success screens)
 
 Stored inside /screenshots/ folder (configurable)
 
 Integrated into ExtentReports for visual logs
 
-🔐 Sample Test Cases
+### 🔐 Sample Test Cases
 ✅ Login with invalid credentials (error validation)
 
 ✅ Register account with randomized data (dynamic email, phone)
@@ -141,7 +102,7 @@ Integrated into ExtentReports for visual logs
 
 ✅ Sign out and navigate back to login screen
 
-🙌 Contributing
+### 🙌 Contributing
 Feel free to fork this repo, improve and raise PRs for:
 
 API test integration
@@ -152,5 +113,5 @@ Dockerized execution
 
 Parallel thread execution via TestNG
 
-📄 License
+### 📄 License
 This project is licensed under the MIT License.
